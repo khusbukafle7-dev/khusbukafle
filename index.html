@@ -1,1 +1,241 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Portfolio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f5ff;
+      color: #28345b;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(120deg, #dbeafe, #fce7f3);
+      padding: 35px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 38px;
+      margin-bottom: 5px;
+    }
+
+    nav {
+      background: white;
+      padding: 16px 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 8px #00000010;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 5px 10px;
+      color: #6554c0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #e75480;
+    }
+
+    .intro {
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .intro img {
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid white;
+    }
+
+    main {
+      max-width: 950px;
+      margin: auto;
+      padding: 10px 18px;
+    }
+
+    section {
+      background: white;
+      padding: 25px;
+      margin: 22px 0;
+      border-radius: 18px;
+      box-shadow: 0 5px 18px #5b4b8a12;
+    }
+
+    h2 {
+      color: #715bd4;
+      margin-top: 0;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: #f0edff;
+      padding: 18px;
+      border-radius: 12px;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 250px;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin: 5px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #715bd4;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #28345b;
+      color: white;
+      text-align: center;
+      padding: 22px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 29px;
+      }
+
+      nav a {
+        margin: 4px 6px;
+        font-size: 14px;
+      }
+
+      section {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="home">
+    <h1>My Personal Portfolio</h1>
+    <p>A little introduction to who I am!</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#introduction">Introduction</a>
+    <a href="#hobby">Hobby</a>
+    <a href="#aim">Aim</a>
+    <a href="#interest">Interests</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#art">Art</a>
+  </nav>
+
+  <div class="intro">
+    <img src="https://placehold.co/300x300/e9ddff/483d8b?text=My+Photo"
+         alt="My profile photo">
+    <h2>Hello, welcome to my world!</h2>
+    <p>I am a Class 9 student, dreamer and learner.</p>
+    <a class="button" href="#introduction">Explore My Portfolio</a>
+  </div>
+
+  <main>
+    <section id="introduction">
+      <h2>👋 Introduction</h2>
+      <p>Hello! My name is [Your Name]. I study in Class 9.
+      I am a curious student who enjoys learning new things
+      and exploring my creativity. I always try to improve
+      myself and learn from my experiences.</p>
+    </section>
+
+    <section id="hobby">
+      <h2>💖 My Hobbies</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>📚 Reading</h3>
+          <p>I enjoy reading and discovering new ideas.</p>
+        </div>
+        <div class="card">
+          <h3>🎨 Drawing</h3>
+          <p>I like expressing my imagination through art.</p>
+        </div>
+        <div class="card">
+          <h3>🎵 Music</h3>
+          <p>Listening to music makes me feel relaxed.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="aim">
+      <h2>🎯 My Aim</h2>
+      <p>My aim is to become a successful and responsible
+      person. I want to work hard, achieve my dreams,
+      make my family proud and help others.</p>
+    </section>
+
+    <section id="interest">
+      <h2>💡 My Fields of Interest</h2>
+      <p>I am interested in creativity, technology,
+      learning new skills and exploring new ideas.
+      I want to discover my talents and develop them
+      through practice and hard work.</p>
+    </section>
+
+    <section id="gallery">
+      <h2>📸 My Gallery</h2>
+      <p>Here are some sample pictures. Later, I can
+      replace them with my own photos and memories.</p>
+      <div class="gallery">
+        <img src="https://placehold.co/400x250/dbeafe/28345b?text=Nature"
+             alt="Nature">
+        <img src="https://placehold.co/400x250/fce7f3/28345b?text=Memories"
+             alt="Memories">
+        <img src="https://placehold.co/400x250/dcfce7/28345b?text=My+World"
+             alt="My world">
+      </div>
+    </section>
+
+    <section id="art">
+      <h2>🖌️ My Art</h2>
+      <p>This section is dedicated to my drawings,
+      paintings, sketches and creative projects.</p>
+      <p>Art helps me express my thoughts and imagination.
+      I hope to keep learning and improving my artistic skills.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Thank you for visiting my portfolio! 💜</p>
+    <p>Made by a Class 9 student.</p>
+  </footer>
+
+</body>
+</html>
+
